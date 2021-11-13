@@ -6,10 +6,6 @@ Provides ability to put Views content in responsive columns using CSS3 Grid layo
 INTRODUCTION
 ------------
 
-This was created from the existing module Views B Grid
-
-https://backdropcms.org/project/views_b_grid
-
 Allow designers to create a grid content without or without creating their own CSS.
 
 The module creates a new Views Format to display content in a CSS3 Grid.  You can select either Fit or Fill see https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ 
@@ -22,6 +18,11 @@ For more information:
 
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 http://flexbox.io/
+
+
+This was created from the existing module Views B Grid
+
+https://backdropcms.org/project/views_b_grid
 
 
 REQUIREMENTS
