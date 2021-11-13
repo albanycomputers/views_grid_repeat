@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Contains the views_grid_repeat style plugin.
@@ -7,14 +6,13 @@
 
 class views_plugin_style_views_grid_repeat extends views_plugin_style {
 
-/**
- * Set default options
- * 
- * function options(&$options) {
- * parent::options($options);
- */
-
-function option_definition() {
+  /**
+   * Set default options
+   * 
+   * function options(&$options) {
+   * parent::options($options);
+   */
+  function option_definition() {
     $options = parent::option_definition();
     $options['layout_type'] = array('default' => 'fit_grid');
     $options['layout_width_value'] = array('default' => 300);

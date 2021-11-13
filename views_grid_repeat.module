@@ -34,7 +34,6 @@ function template_preprocess_views_view_views_grid_repeat(&$vars) {
  
   $view = $vars['view'];
   $options = $vars['options'];
-  backdrop_set_message('<hr><br><pre>Template - $options<br>'. print_r($options, TRUE) .'</pre>'); 
 }
 
 /**
@@ -49,5 +48,5 @@ function views_grid_repeat_library_info() {
       backdrop_get_path('module', 'views_grid_repeat') . '/views_grid_repeat.css' => array(),
     ),
   );
-   return $libraries;
+  return $libraries;
 }
