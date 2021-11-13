@@ -6,7 +6,7 @@ Provides ability to put Views content in responsive columns using CSS3 Grid layo
 INTRODUCTION
 ------------
 
-Allow designers to create a grid content without or without creating their own CSS.
+Allow designers to create a grid content with or without adding their own CSS to a theme.
 
 The module creates a new Views Format to display content in a CSS3 Grid.  You can select either Fit or Fill see https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ 
 
