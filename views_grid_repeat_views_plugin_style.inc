@@ -3,8 +3,7 @@
  * @file
  * Contains the views_grid_repeat style plugin.
  */
-
-class views_plugin_style_views_grid_repeat extends views_plugin_style {
+class views_grid_repeat_views_plugin_style extends views_plugin_style {
 
   /**
    * Set default options
