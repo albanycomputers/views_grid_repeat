@@ -44,13 +44,14 @@ When editing a View, choose:
 format: CSS3 Grid Fit or Fill
 
 Settings: 
+
     Content width: Choose the width of the content
 
     Minimum row height: Choose the minimum row height
 
     Unit type for width and height: for the Unit or measure i.e.  px, em, ren, cm, mm, in, vh etc...
-    
-    See https://www.w3schools.com/cssref/css_units.asp for all of the available options.
+
+See https://www.w3schools.com/cssref/css_units.asp for all of the available options.
 
 LICENSE
 -------
