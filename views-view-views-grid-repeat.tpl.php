@@ -10,7 +10,7 @@ $layout_width_value = $options['layout_width_value'];  // width of the column or
 $layout_width_height = $options['layout_width_height']; // minimum height of content
 $layout_width_unit = trim($options['layout_width_unit']); // unit of measire for the content value i.e. px or em etc...
 
-$css_style_pre = '';
+//$css_style_pre = '';
 $css_style = '';
 $css_style_post = '"';
 
