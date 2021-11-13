@@ -31,8 +31,6 @@ switch ($layout_type) {
   
     case "fit_grid":
         print '<div class="grid-repeat-container-fit" ' . $css_style . '>';
-          //print '<div class="grid-template-columns:repeat(auto-fit, minmax(250px, 1fr))">';
-            //print '<div class="row">';
             if (!empty($title)) {
                 print "<h3>$title</h3>";
             }
@@ -41,8 +39,6 @@ switch ($layout_type) {
                     print '<div class="' . implode(' ', $row_classes[$id]) . '">' . $row . '</div>';
                 }
             }
-            //print '</div>';
-          //print '</div>';
         print '</div>';
     break;
 
