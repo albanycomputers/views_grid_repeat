@@ -7,12 +7,12 @@
 
 class views_plugin_style_views_grid_repeat extends views_plugin_style {
 
-  /**
-   * Set default options
-   */
-  // function options(&$options) {
-    // parent::options($options);
-
+/**
+ * Set default options
+ * 
+ * function options(&$options) {
+ * parent::options($options);
+ */
 
 function option_definition() {
     $options = parent::option_definition();

@@ -26,4 +26,3 @@ function views_grid_repeat_views_plugins() {
     ),
   );
 }
-

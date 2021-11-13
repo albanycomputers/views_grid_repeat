@@ -49,8 +49,5 @@ function views_grid_repeat_library_info() {
       backdrop_get_path('module', 'views_grid_repeat') . '/views_grid_repeat.css' => array(),
     ),
   );
-
-  backdrop_set_message('<hr><br><pre>views_grid_repeat_library_info - $libraries<br>'. print_r($libraries, TRUE) .'</pre>');
-
-  return $libraries;
+   return $libraries;
 }
