@@ -11,21 +11,20 @@ $layout_width_height = $options['layout_width_height']; // minimum height of con
 $layout_width_unit = trim($options['layout_width_unit']); // unit of measire for the content value i.e. px or em etc...
 
 $css_style_pre = '';
-$css_style = 'style="';
+$css_style = '';
 $css_style_post = '"';
 
 $css_width_value = '';
 if ($layout_width_value>0) {
   $css_width_value = strval($layout_width_value) . $layout_width_unit ;
-  $css_style .= 'display:grid;grid-template-columns:repeat(auto-fit, minmax(' . $css_width_value . ', 1fr));';
-}
+  $css_style = 'style="display:grid;grid-template-columns:repeat(auto-fit, minmax(' . $css_width_value . ', 1fr));';
 
-$css_width_height = '';
-if($layout_width_height>0) {
-  $css_width_height = strval($layout_width_height) . $layout_width_unit ;
-  $css_style .= ' min-height:' . $css_width_height . ';' . $css_style_post;
+  $css_width_height = '';
+  if($layout_width_height>0) {
+    $css_width_height = strval($layout_width_height) . $layout_width_unit ;
+    $css_style .= ' min-height:' . $css_width_height . ';' . $css_style_post;
+  }
 }
-
 
 
 switch ($layout_type) {

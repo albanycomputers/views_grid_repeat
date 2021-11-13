@@ -29,7 +29,7 @@ function option_definition() {
   function options_form(&$form, &$form_state) {
     parent::options_form($form, $form_state);
     $form['layout_info'] = array(
-      '#markup' => '<h4>' . t('Layout tips') . '</h4><p>' . t('To use the settings in the View enter values in the fields below.  To use your own CSS then make sure the fields below are empty.') . '</p>',
+      '#markup' => '<h4>' . t('Layout tips') . '</h4><p>' . t('To use the settings in the View enter values in the fields below.  To use your own CSS and ignore the settings below set the Content Width to 0.') . '</p>',
     );
     $form['layout_type'] = array(
       '#type' => 'radios',
