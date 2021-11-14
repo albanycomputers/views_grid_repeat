@@ -1,5 +1,6 @@
 name = Views Grid Repeat
 description = Provides ability to put Views content in responsive columns using CSS3 Grid layout.
+version = 1.0.0
 backdrop = 1.x
 type = module
 package = Views
