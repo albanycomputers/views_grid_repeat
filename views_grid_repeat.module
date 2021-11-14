@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * CSS3 Grid  - Responsive Fill and Fit columns
+ * CSS3 Grid  - Responsive Fill and Fit columns.
  */
 
 /**
@@ -14,7 +14,7 @@ function views_grid_repeat_autoload_info() {
 }
 
 /**
- * Implements hook_views_api()
+ * Implements hook_views_api().
  */
 function views_grid_repeat_views_api() {
   return array(
@@ -28,10 +28,11 @@ function views_grid_repeat_views_api() {
  * Preprocess function for views_view_views_grid_repeat.tpl.php.
  */
 function template_preprocess_views_view_views_grid_repeat(&$vars) {
-  // Run preprocess function for unformatted style
+  
+  // Run preprocess function for unformatted style.
   template_preprocess_views_view_unformatted($vars);
-  // Get view options
- 
+  
+  // Get view options.
   $view = $vars['view'];
   $options = $vars['options'];
 }

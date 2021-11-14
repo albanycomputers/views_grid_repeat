@@ -7,10 +7,7 @@
 class views_plugin_style_views_grid_repeat extends views_plugin_style {
 
   /**
-   * Set default options
-   * 
-   * function options(&$options) {
-   * parent::options($options);
+   * Set default options.
    */
   function option_definition() {
     $options = parent::option_definition();
@@ -27,14 +24,14 @@ class views_plugin_style_views_grid_repeat extends views_plugin_style {
   function options_form(&$form, &$form_state) {
     parent::options_form($form, $form_state);
     $form['layout_info'] = array(
-      '#markup' => '<h4>' . t('Layout tips') . '</h4><p>' . t('To use the settings in the View enter values in the fields below.  To use your own CSS and ignore the settings below set the Content Width to 0.') . '</p>',
+      '#markup' => '<h4>' . t('Layout tips') . '</h4><p>' . t('To use the settings in the View enter values in the fields below. To use your own CSS and ignore the settings below set the Content Width to 0.') . '</p>',
     );
     $form['layout_type'] = array(
       '#type' => 'radios',
       '#title' => t('Layout Type'),
       '#options' => array('fit_grid' => t('CSS3 Fit Grid'), 'fill_grid' => t('CSS3 Fill Grid')),
       '#default_value' => $this->options['layout_type'],
-      '#description' => t('Choose either Fit or Fill.  Fit will expand the column to fit the content to the available space.  Fill will have as many columns as needed but will keep the minimum and maximum size, If there is not enough columns to fit the width, you will have a visible space on the left.'),
+      '#description' => t('Choose either Fit or Fill. Fit will expand the column to fit the content to the available space. Fill will have as many columns as needed but will keep the minimum and maximum size, If there is not enough columns to fit the width, you will have a visible space on the left.'),
     );
     $form['layout_width_value'] = array(
       '#type' => 'number',
@@ -62,7 +59,7 @@ class views_plugin_style_views_grid_repeat extends views_plugin_style {
       '#size' => 20,
       '#maxlength' => 3,
       '#default_value' => $this->options['layout_width_unit'],
-      '#description' => t('Enter the desired width and heigh unite of measure. Example CSS units are px % cm ren em etc...'),
+      '#description' => t('Enter the desired width and heigh unite of measure. Example CSS units are px, %, cm, ren, em etc.'),
     );
   }
 }
