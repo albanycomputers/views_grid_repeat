@@ -11,6 +11,7 @@ class views_plugin_style_views_grid_repeat extends views_plugin_style {
    */
   function option_definition() {
     $options = parent::option_definition();
+    $options['layout_inline'] = array('default' => "inline_css");
     $options['layout_type'] = array('default' => 'fit_grid');
     $options['layout_width_value'] = array('default' => 300);
     $options['layout_width_height'] = array('default' => 300);
@@ -24,7 +25,14 @@ class views_plugin_style_views_grid_repeat extends views_plugin_style {
   function options_form(&$form, &$form_state) {
     parent::options_form($form, $form_state);
     $form['layout_info'] = array(
-      '#markup' => '<h4>' . t('Layout tips') . '</h4><p>' . t('To use the settings in the View enter values in the fields below. To use your own CSS and ignore the settings below set the Content Width to 0.') . '</p>',
+      '#markup' => '<h4>' . t('Layout tips') . '</h4><p>' . t('TODO::add drescription for here And add Javascript to disable options if Theme CSS is selected.') . '</p>',
+    );
+    $form['layout_inline'] = array(
+      '#type' => 'radios',
+      '#title' => t('Inline CC or Theme CSS'),
+      '#options' => array('inline_css' => t('Inline CSS'), 'theme_css' => t('CSS in your theme')),
+      '#default_value' => $this->options['layout_inline'],
+      '#description' => t('When enabled the Inline CSS below will be used and when disabled you will need to provide your own CSS in a theme.'),
     );
     $form['layout_type'] = array(
       '#type' => 'radios',
@@ -38,7 +46,7 @@ class views_plugin_style_views_grid_repeat extends views_plugin_style {
       '#title' => t('Content width'),
       '#size' => 20,
       '#maxlength' => 4,
-      '#min' => 0,
+      '#min' => 1,
       '#max' => 9999,
       '#default_value' => $this->options['layout_width_value'],
       '#description' => t('Enter the desired width of the content or column. Use 0 to disable the CSS when using your own CSS. Default is 300px using the Unit Type of px (pixels) below.'),
@@ -48,7 +56,7 @@ class views_plugin_style_views_grid_repeat extends views_plugin_style {
       '#title' => t('Minimum row height'),
       '#size' => 20,
       '#maxlength' => 4,
-      '#min' => 0,
+      '#min' => 1,
       '#max' => 9999,
       '#default_value' => $this->options['layout_width_height'],
       '#description' => t('Enter the minimum height of the content type. Use 0 to disable the CSS when using your own CSS. Default is 300px using the Unit Type of px (pixels) below.'),
