@@ -1,7 +1,7 @@
 Views Grid Repeat
 ------------------------
 
-Provides ability to put Views content in responsive columns using CSS3 Grid layout.
+Provides the ability to put Views content in responsive columns using CSS3 Grid layout.
 
 INTRODUCTION
 ------------
